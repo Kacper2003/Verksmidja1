@@ -1,0 +1,15 @@
+int potentiometer = 0;
+
+void setup()
+{
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop()
+{
+  potentiometer = analogRead(A0);
+  Serial.println(potentiometer);
+  delay(10); 
+}
